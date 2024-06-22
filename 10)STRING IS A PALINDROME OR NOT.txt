@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+printf("K.SUDHEER REDDY-192210249\n");
+char str[100] = "malayalam";
+char str1[100];
+strcpy(str1,str);
+    printf("Original String: %s\n", str);
+    int len = strlen(str);
+    for (int i = 0, j = len - 1; i <= j; i++, j--) {
+        char c = str[i];
+        str[i] = str[j];
+        str[j] = c;
+    }
+    if(strcmp(str1,str)==0){
+    	printf("string is a palindrome");
+	}
+	else{
+	    printf("string is not  a palindrome");	
+	}
+
+}
